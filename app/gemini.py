@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", api_key="AIzaSyBxlH5LWQMlgPa9Mpuiw_kPfcpebp_Mfnw")
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=os.getenv("GEMINI_API_KEY"))
 
 
 async def generate_summary(text: str) -> str:

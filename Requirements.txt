@@ -1,14 +1,25 @@
+# fastapi
+# uvicorn
+# asyncpg
+# sqlalchemy
+# pydantic
+# passlib[bcrypt]
+# python-jose
+# openai
+# langchain
+# python-dotenv
+# httpx
+# pytest
+
 fastapi
-uvicorn
-asyncpg
-sqlalchemy
-pydantic
-passlib[bcrypt]
-python-jose
-openai
-langchain
+uvicorn[standard]
 python-dotenv
-httpx
-pytest
-
-
+sqlalchemy
+asyncpg
+alembic
+passlib[bcrypt]
+python-jose[cryptography]
+langchain
+langchain-google-genai
+pydantic
+fastapi-pagination
