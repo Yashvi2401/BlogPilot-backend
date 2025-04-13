@@ -11,4 +11,5 @@ app.include_router(authentication.router)
 app.include_router(user.router)
 app.include_router(blog.router)
 
+
 add_pagination(app) 
