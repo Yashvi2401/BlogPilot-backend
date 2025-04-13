@@ -1,5 +1,5 @@
 from sqlalchemy import Column, DateTime, Integer, String, func
-from app.db.base import Base
+from db.base import Base
 from sqlalchemy.orm import relationship
 
 
@@ -13,4 +13,4 @@ class User(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
 
-    blogs = relationship("Blog",back_populates="creator")
+    blogs = relationship("Blog", back_populates="creator")

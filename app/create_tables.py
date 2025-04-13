@@ -1,7 +1,8 @@
 import asyncio
-from app.db.session import async_engine
-from app.models import blog, user
-from app.db.base import Base
+from db.session import async_engine
+from models import blog, user
+from db.base import Base
+
 
 async def create_all():
     async with async_engine.begin() as conn:
