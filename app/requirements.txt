@@ -10,3 +10,4 @@ langchain
 langchain-google-genai
 pydantic
 fastapi-pagination
+python-multipart
