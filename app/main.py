@@ -15,8 +15,8 @@ def read_root():
     return {"Hello": "World"}
 
 @app.get("/create-table")
-def read_root():
-    create_all()
+async def read_root():
+    await create_all()
     return {"Message": "Tables created successfully"}
 
 
