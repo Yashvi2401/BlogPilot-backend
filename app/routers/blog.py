@@ -38,7 +38,7 @@ async def get_blogs(db: AsyncSession = Depends(get_db)):
 
 add_pagination(router)
 
-@router.get("/{id}",response_model=Page[BlogOut])
+@router.get("/id/{id}",response_model=BlogOut)
 async def show_blog(id:int, db: AsyncSession = Depends(get_db)):
     result = await db.execute(select(Blog).where(Blog.id == id))
     blog = result.scalars().first()
