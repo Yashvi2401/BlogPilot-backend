@@ -38,6 +38,17 @@ async def get_blogs(db: AsyncSession = Depends(get_db)):
 
 add_pagination(router)
 
+@router.get("/{id}",response_model=Page[BlogOut])
+async def show_blog(id:int, db: AsyncSession = Depends(get_db)):
+    result = await db.execute(select(Blog).where(Blog.id == id))
+    blog = result.scalars().first()
+
+    if not blog:
+        raise HTTPException(status_code=404, detail="Blog not found")
+    return blog
+    
+
+
 
 @router.put("/{id}")
 async def update_blog(id: int, updated_blog: BlogCreate, db: AsyncSession = Depends(get_db), current_user: User = Depends(get_current_user)):
