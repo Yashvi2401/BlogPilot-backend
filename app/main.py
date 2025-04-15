@@ -12,7 +12,7 @@ app = FastAPI()
 # CORS configuration
 origins = [
     "http://localhost:3000",  # Local development frontend
-    "https://your-frontend-domain.com"  # Replace with your actual frontend domain if hosted
+    "https://blog-pilot.vercel.app/"  
 ]
 
 app.add_middleware(
