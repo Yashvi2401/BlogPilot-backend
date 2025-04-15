@@ -2,7 +2,11 @@
 
 ## 🎥 Demo
 
-Watch the project demo: [BlogPilot Demo Video](https://www.loom.com/share/6f14fbf83ccd49988b886a78866222e8)
+Watch the project demo: [BlogPilot Demo Video](https://www.loom.com/share/76e07205c28c4520a1b63e007fe44c96?sid=7a3d9d88-d8ba-4c46-9a10-9278cfd42b2a)
+
+## 🌐 Live Demo
+
+Try the live application: [BlogPilot Live Demo](https://blogpilot-backend-production.up.railway.app/docs)
 
 ## 📝 Description
 
@@ -164,4 +168,3 @@ The platform uses Google's Gemini API for generating concise summaries of blog p
 - Asynchronous operations are used for better performance
 - Strong data validation ensures data integrity
 - Comprehensive error handling is implemented
-
